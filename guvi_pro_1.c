@@ -1,28 +1,19 @@
 #include<stdio.h>
 #include<conio.h>
-int  main()
+void main()
 {
-int b,i,j,c=0;
-char a[100][100],s[100];
-clrscr();
-scanf("%d",&b);
-for(i=0;i<b;i++)
-scanf("%s",a[i]);
-for(i=0;a[0][i];i++)
-{
-for(j=1;a[j][i];j++)
-{
-if(a[j][i]!=a[j-1][i])
-{
-printf("%s",&s);
-c=1;
-}
-}
-if(c==1)
-return 0;
-else
-s[i]=a[0][i];
-}
+int a,b,b1,b2,b3,c,c1,c2,c3,e;
+b=b1=b2=b3=c=c1=c2=c3=0;
+scanf("%d",&a);
+b=a/500;
+c=a%500;
+b1=c/100;
+c1=c%100;
+b2=c1/50;
+c2=c1%50;
+b3=c2/10;
+c3=c2%10;
+e=b+b1+b2+b3+c3;
+printf("%d",e);
 getch();
-return 0;
 }
